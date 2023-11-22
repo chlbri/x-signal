@@ -1,6 +1,6 @@
 {
   "name": "@bemedev/x-react-signal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple function that use XState with [Maverick's signal].",
   "repository": {
     "type": "git",
@@ -47,7 +47,6 @@
   "devDependencies": {
     "@testing-library/react-hooks": "^8.0.1",
     "@types/react": "^18.2.38",
-    "@types/use-sync-external-store": "^0.0.6",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "@vitejs/plugin-react": "^4.2.0",
@@ -73,8 +72,7 @@
   },
   "dependencies": {
     "@bemedev/x-matches": "^0.0.3",
-    "@maverick-js/signals": "^5.11.4",
-    "use-sync-external-store": "^1.2.0"
+    "@maverick-js/signals": "^5.11.4"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
