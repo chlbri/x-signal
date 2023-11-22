@@ -1,7 +1,7 @@
 {
   "name": "@bemedev/x-react-signal",
-  "version": "0.0.2",
-  "description": "A simple function that use XState with **[Maverick's signal](https://www.npmjs.com/package/@maverick-js/signals)**",
+  "version": "0.0.3",
+  "description": "A simple function that use XState with [Maverick's signal].",
   "repository": {
     "type": "git",
     "url": "https://github.com/chlbri/x-interpret-react"
