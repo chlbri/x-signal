@@ -1,6 +1,6 @@
 {
-  "name": "@bemedev/x-interpret-react",
-  "version": "0.1.3",
+  "name": "@bemedev/x-react-signal",
+  "version": "0.0.1",
   "description": "A simple function that use XState like a RXjs Observable",
   "repository": {
     "type": "git",
