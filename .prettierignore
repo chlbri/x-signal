@@ -1,0 +1,6 @@
+# Ignore artifacts:
+node_modules
+publish
+publish_npm
+**/*.typegen.ts
+**/*.md
