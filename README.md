@@ -1,7 +1,6 @@
 # React XState interpreter
 
-A simple function that use XState like a RXjs Observable.
-
+A simple function that use XState with **[Maverick's signal](https://www.npmjs.com/package/@maverick-js/signals)**
 <br/>
 
 ## Short introduction
@@ -46,8 +45,7 @@ added, the harder you lose the benefits of SSR.
 
 ## The solution
 
-Just a simple function reactInterpret. It’s a hook creator and function
-generator.
+Just a simple function _createSignal_. It’s a object with signals to watch the state of your machine.
 
 ### It accepts the same arguments as XState function *[interpret](https://xstate.js.org/docs/guides/interpretation.html#interpreter)*.
 
@@ -71,26 +69,28 @@ It returns some functions :
       "usage": "mySend({ input: 'name' })"
     }
   },
-  "createSelector": "Create selector for hooks"
+  "createSelector": "Create selector for all the state",
+  "createContextSelector": "Create selector inside the 'state.context'",
+  "createSelector": "Create selector for all the state",
+  "reducer": "Create a reducer to build a new selector"
   /* ... */
 }
 ```
 
-, and hooks :
+, and signals :
 
 ```json
 {
-  "useSelector": "Select an element inside the current state (The same as Xstate hook but without the last parameter).",
-  "useMatches": "Macther for the value of the current state (not from XState, derived from @bemedev/x-matches).",
-  "useHasTags": "Macther for tags of current value. Accept param array."
+  "computed": "Select an element inside the current state.",
+  "context": "Select an element inside the current 'state.context'.",
+  "matches": "Macther for the value of the current state (not from XState, derived from @bemedev/x-matches).",
+  "hasTags": "Macther for tags of current value. Accept param array."
 }
 ```
 
-**NB** : Check the Library : _[@bemedev/x-matches](https://www.npmjs.com/package/@bemedev/x-matches)_ to see how ***useMatches*** works.
+**NB** : Check the Library : _[@bemedev/x-matches](https://www.npmjs.com/package/@bemedev/x-matches)_ to see how ***matches*** works.
 
-### Live documentation [here](https://github.com/chlbri/x-interpret-react/blob/master/src/index.test.ts)
+### Live documentation [here](https://github.com/chlbri/x-react-signal/blob/master/src/index.test.ts)
 
 <br>
 <br>
-
-_Enjoy your [function](https://github.com/chlbri/x-matches)_ ✌🏾😎 _!_
